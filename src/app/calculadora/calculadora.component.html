@@ -1,0 +1,14 @@
+<form>
+    <p id="textoPantalla">{{resultado}}</p>
+    Primer Numero: <input type="number" name="numero1" [(ngModel)]="numero1">
+    <br>
+    Segundo Numero: <input type="number" name="numero2" [(ngModel)]="numero2">
+    <br>
+    <br>
+    <div class="botones" align="center">
+        <input type="submit" value="+" (click)="sumar()">
+        <input type="submit" value="-" (click)="restar()">
+        <input type="submit" value="/" (click)="dividir()">
+        <input type="submit" value="*" (click)="multiplicar()">
+    </div>
+</form>
